@@ -1,0 +1,501 @@
+@font-face {
+    font-family: 'Source Sans Pro Regular';
+    src: url(fonts/source-sans-pro/SourceSansPro-Regular.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url(fonts/source-sans-pro/SourceSansPro-Bold.otf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Italic';
+    src: url(fonts/source-sans-pro/SourceSansPro-It.otf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Black';
+    src: url(fonts/source-sans-pro/SourceSansPro-Black.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    color: #000;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Black Italic';
+    src: url(fonts/source-sans-pro/SourceSansPro-BlackIt.otf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    color: #000;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Bold Italic';
+    src: url(fonts/source-sans-pro/SourceSansPro-BoldIt.otf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    src: url(fonts/source-sans-pro/SourceSansPro-Light.otf) format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Italic Light';
+    src: url(fonts/source-sans-pro/SourceSansPro-LightIt.otf) format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro XLight';
+    src: url(fonts/source-sans-pro/SourceSansPro-ExtraLight.otf) format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    color: #071629;
+}
+
+/* Header Styles */
+header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: Source Sans Pro Regular;
+    margin-top: 27px;
+}
+
+#top-logo {
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+main section:first-child {
+    background-image: url(images/pg1_background.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 200px 0 100px;
+    font-family: Source Sans Pro Bold;
+}
+
+#gs {
+    font-size: 150px;
+    margin-bottom: 0;
+}
+
+#smiles, #grin, #laugh {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 35px;
+}
+
+#register {
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    font-family: Source Sans Pro Light;
+    letter-spacing: 2px;
+}
+
+#register-2 {
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: Source Sans Pro Light;
+    letter-spacing: 2px; 
+}
+
+#learn-p {
+    font-size: 40px;
+    font-family: Source Sans Pro Light ;
+}
+
+.awardees {
+    padding: 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.Bruce {
+    border-radius: 50%;
+}
+
+.awardees p {
+    font-family: Source Sans Pro Italic;
+}
+
+.individuals {
+    margin-right: 50px;
+}
+
+/* weather presenter */
+main section:nth-child(2) {
+    display: flex;
+    padding: 80px 40px;
+    background-color: #C271FF;
+    color: white;
+}
+
+main section:nth-child(2) h2 {
+    color: #C271FF;
+    font-size: 32px;
+}
+
+main section:nth-child(2) > div:last-child {
+    display: flexbox;
+    justify-content: center; 
+    gap: 30px;
+    margin-left: 50px;
+}
+
+.italic-text {
+    font-family: Source Sans Pro Italic Light;
+}
+
+main section:nth-child(2) img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+.presenter-deets {
+    font-family: Source Sans Pro Light;
+    font-size: 20px;
+    justify-content: center;
+}
+
+/* Most popular tutorials */
+
+.tutorial-sect {
+    padding: 80px ;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#mpt {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-family: Source Sans Pro XLight;
+}
+
+.highlight-purple {
+    color: #C271FF;
+}
+
+.tutorials {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tutorials > div {
+    flex: 1;
+    max-width: 255px;
+}
+
+.tutorials img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tutorials h3 {
+    font-size: 16px;
+    margin: 15px 0 5px;
+    font-family: Source Sans Pro Regular;
+}
+
+.tutorials > div > p {
+    font-size: 14px;
+    color: rgba(7, 22, 41, 0.7);
+    line-height: 1.5;
+    font-family: Source Sans Pro Light;
+}
+
+.tutorials > div > div {
+    display: flex;
+    align-items: center;
+    font-family: Source Sans Pro Regular;
+    text-decoration-color: #C271FF;
+}
+
+.stars p {
+    color: #C271FF;
+    margin-left: 120px;
+    text-decoration: #C271FF;
+}
+
+.tutorials > div > div img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tutorials h4 {
+    font-size: 14px;
+    color: #C271FF;
+    font-family: Source Sans Pro Regular;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.stars > div {
+    display: flex;
+}
+
+.fa-star {
+    color: #C271FF;
+    font-size: 15px;
+    margin-right: 3px;
+}
+
+.stars p {
+    font-size: 14px;
+    color: rgba(7, 22, 41, 0.7);
+}
+
+/* Add play button overlay */
+.tutorials > div {
+    position: relative;
+}
+
+.tutorials > div::before {
+    content: "\25B6";  /* Unicode for play triangle */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #C271FF;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+
+/* Free Membership */
+
+main section:nth-child(4) {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #071629;
+    color: white;
+    font-family: 'Source Sans Pro Light';
+    font-weight: normal;
+}
+
+main section:nth-child(4) h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-family: Source Sans Pro Light;
+}
+
+main section:nth-child(4) h3 {
+    font-family: Source Sans Pro Regular;
+}
+
+.highlight-purple {
+    color: #C271FF;
+    font-family: Source Sans Pro Bold;
+}
+
+main section:nth-child(4) > div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+main section:nth-child(4) > div > div {
+    width: 255px;
+}
+
+main section:nth-child(4) img {
+    width: 20%;
+    height: auto;
+}
+
+.fa-star {
+    color: #C271FF;
+}
+
+
+main section:nth-child(5) {
+    background-color: white;
+    color: #071629;
+    padding: 80px 0;
+    text-align: center;
+    font-family: Source Sans Pro Regular;
+}
+
+main section:nth-child(5) h3 {
+    font-family: Source Sans Pro Regular;
+    color: #071629;
+    text-align: left;
+}
+
+.desc {
+    color: grey;
+    text-align: left;
+    font-family: Source Sans Pro Light;
+}
+
+main section:nth-child(5) h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-family: Source Sans Pro Light;
+}
+
+main section:nth-child(5) > div {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 50px;
+}
+
+.faq-l {
+    margin-left: 200px;
+}
+
+.faq-r {
+    margin-right: 200px;
+}
+
+main section:nth-child(5) img {
+    width: 45px;
+    height: 45px;
+}
+
+/* FAQ Section */
+main section:nth-child(6) {
+    padding: 80px 0;
+    text-align: center;
+}
+
+main section:nth-child(6) h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-family: Source Sans Pro XLight;
+}
+
+main section:nth-child(6) > div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+main section:nth-child(6) > div > div {
+    width: 350px;
+    text-align: left;
+    font-family: Source Sans Pro Regular;
+}
+
+/* Footer */
+footer {
+    background-color: #071629;
+    color: #ffffff;
+    padding: 75px 100px;
+}
+
+footer section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer section > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+footer .logo {
+    height: 30px;
+}
+
+footer div > div {
+    display: flex;
+    gap: 20px;
+}
+
+footer .fa-brands {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 0.35;
+    font-family: Source Sans Pro Light;
+}
